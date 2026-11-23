@@ -89,7 +89,7 @@ Linux, Mesa and LLVM sources and takes a long time.
 
 ## Legal
 
-Stela contains no Apple software. You are responsible for following Apple's
+Stelaris contains no Apple software. You are responsible for following Apple's
 software license agreement and terms of use.
 
 Stelaris's code is GPL-2.0-or-later. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
