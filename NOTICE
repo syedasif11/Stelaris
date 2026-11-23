@@ -1,7 +1,7 @@
-Stela
+Stelaris
 =====
 
-Stela's own code is licensed under the GNU General Public License, version 2
+Stelaris's own code is licensed under the GNU General Public License, version 2
 or (at your option) any later version (SPDX: GPL-2.0-or-later). The license
 text is in LICENSE. Files that say otherwise in their SPDX line or copyright
 header keep their own terms; every license named below has its text in
@@ -17,9 +17,9 @@ without it that links Apache-2.0 code is distributed under GPL-3.0-or-later
   stela (CLI)           GPL-3.0-or-later (links Apache-2.0 crates and no
                         GPL-2.0-only code)
   stela-gpu-maintenance GPL-2.0-or-later
-  Stela.app             GPL-2.0-or-later
-  StelaGPU.kext         GPL-2.0-or-later
-  StelaGPU.bundle       GPL-2.0-or-later
+  Stelaris.app             GPL-2.0-or-later
+  StelarisGPU.kext         GPL-2.0-or-later
+  StelarisGPU.bundle       GPL-2.0-or-later
 
 The stela CLI carries a copy of stela.efi, a separate program that it writes
 to the installer USB and never links or runs, aggregated with the CLI and
@@ -69,7 +69,7 @@ Rust standard library and          MIT OR Apache-2.0 (MIT used)       stela.efi,
 RustCrypto portions in
 stela-crypto (Graydon Hoare,
 Mozilla Foundation, RustCrypto)
-xnu headers                        APSL-2.0 and per-file notices      StelaGPU.kext
+xnu headers                        APSL-2.0 and per-file notices      StelarisGPU.kext
 Rust crates from crates.io         MIT, MIT OR Apache-2.0, ISC,       stela.efi, stela,
 (Cargo.lock lists them)            BSD-3-Clause, 0BSD, Zlib,          stela-gpu-maintenance
                                    Unicode-3.0, MPL-2.0 (ucs2),
@@ -80,7 +80,7 @@ Rust crates from crates.io         MIT, MIT OR Apache-2.0, ISC,       stela.efi,
                                    AND ISC (ring)
 
 Copyright notices for these components are in their source files, which the
-corresponding source above includes. Device firmware is not part of Stela;
+corresponding source above includes. Device firmware is not part of Stelaris;
 `stela setup` downloads it from the vendors' own releases, under the vendors'
 terms.
 
@@ -126,8 +126,8 @@ Ported sources
 
 The drivers and Linux support code below are ports or adaptations of the named
 upstream files. Linux revisions are commits of torvalds/linux. Each entry
-gives the Stela path and component, the upstream project, revision and
-licenses, then the upstream files. "see source headers" means the Stela files
+gives the Stelaris path and component, the upstream project, revision and
+licenses, then the upstream files. "see source headers" means the Stelaris files
 carry the license line of each upstream file.
 
 crates/stela-driver-audio/src/: Standard HD Audio command, codec graph and PCM
