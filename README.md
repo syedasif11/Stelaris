@@ -1,5 +1,4 @@
 <h1 align="center">
-  <img src="assets/stela-icon.png" alt="" width="96"><br>
   Stelaris
 </h1>
 
