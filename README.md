@@ -1,6 +1,6 @@
 <h1 align="center">
   <img src="assets/stela-icon.png" alt="" width="96"><br>
-  Stela
+  Stelaris
 </h1>
 
 A translation-based Apple Silicon layer for x86-64 PCs. It is a UEFI boot
@@ -8,7 +8,7 @@ program with an arm64-to-x86-64 translator, a Metal driver for NVIDIA GPUs and
 a model of Apple silicon hardware. Stela currently presents itself as an M2 Mac mini.
 
 > [!WARNING]
-Stela is still in development. It is slow and still may not boot on supported hardware. Fixes are on the way, please submit a GitHub Issue with your boot logs if you encounter an error!
+Stelaris is still in development and is for personal use. 
 
 ## Translator
 
@@ -40,9 +40,9 @@ and supports the Metal3 and Apple7 GPU families.
 
 ## Install
 
-1. Download `stela` from the
-   [releases page](https://github.com/tylertms/Stela/releases).
-2. Run `sudo ./stela` (Linux, macOS) or double-click `stela.exe`
+1. Download `stelaris` [not published yet]
+   
+2. Run `sudo ./stelaris` (Linux, macOS) or double-click `stelaris.exe`
    (Windows).
 3. Choose the USB stick and the installer, then confirm. This erases the USB
    stick.
@@ -50,48 +50,41 @@ and supports the Metal3 and Apple7 GPU families.
 
 ## Update
 
-Download the new `stela`, plug the USB stick in and run:
+Download the new `stelaris`, plug the USB stick in and run:
 
 ```sh
-sudo ./stela update
+sudo ./stelaris update
 ```
 
 On Windows, open Terminal with Run as administrator and run:
 
 ```
-.\stela.exe update
+.\stelaris.exe update
 ```
 
 ## Logs
 
-If Stela does not work, plug the USB stick into any computer with `stela` and
+If Stelaris does not work, plug the USB stick into any computer with `stelari` and
 save the boot log. Include `log.txt` in your GitHub Issue. Save it before you
-start Stela again many times: the log keeps the start of each of the last
+start Stelaris again many times: the log keeps the start of each of the last
 eight boots, but only the latest part of a long run.
 
 ```sh
-sudo ./stela log --output log.txt
+sudo ./stelaris log --output log.txt
 ```
 
 On Windows, open Terminal with Run as administrator and run:
 
 ```
-.\stela.exe log --output log.txt
+.\stelaris.exe log --output log.txt
 ```
 
 ## Build
-
-You need [Rust](https://rustup.rs), git, Python 3.10 or newer, and LLVM 21,
-22 or 23 with Clang, LLD and libclang. On macOS, Xcode's Apple clang 21 or
-newer also works.
-
-```sh
-git clone https://github.com/tylertms/Stela
-cd Stela
+```
 cargo xtask dist
 ```
 
-This writes `target/release/stela`. The first build fetches and compiles
+This writes `target/release/stelaris`. The first build fetches and compiles
 Linux, Mesa and LLVM sources and takes a long time.
 
 ## Legal
@@ -99,8 +92,4 @@ Linux, Mesa and LLVM sources and takes a long time.
 Stela contains no Apple software. You are responsible for following Apple's
 software license agreement and terms of use.
 
-Stela's code is GPL-2.0-or-later. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
-
-## Community
-
-[Discord Server](https://discord.gg/aSkwrJEMYc)
+Stelaris's code is GPL-2.0-or-later. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
