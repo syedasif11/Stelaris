@@ -5,7 +5,7 @@
 
 A translation-based Apple Silicon layer for x86-64 PCs. It is a UEFI boot
 program with an arm64-to-x86-64 translator, a Metal driver for NVIDIA GPUs and
-a model of Apple silicon hardware. Stela currently presents itself as an M2 Mac mini.
+a model of Apple silicon hardware. Stelaris currently presents itself as an M2 Mac mini.
 
 > [!WARNING]
 Stelaris is still in development and is for personal use. 
